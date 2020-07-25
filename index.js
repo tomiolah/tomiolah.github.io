@@ -1,12 +1,5 @@
-let load_excuses = async () => (
-  await (
-    await 
-    fetch(
-      'https://raw.githubusercontent.com/afreeorange/developer-excuses/master/excuses.txt'
-    )
-  ).text()
-).split('\n').filter((val) => val !== '');
-
-load_excuses()
+fetch('https://raw.githubusercontent.com/afreeorange/developer-excuses/master/excuses.txt')
+  .then(resp => resp.text())
+  .then(res => res.split('\n').filter((val) => val !== ''))
   .then(a => a[Math.floor(Math.random() * a.length)])
   .then(x => window.document.title = x);

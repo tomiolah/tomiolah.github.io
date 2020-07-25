@@ -1,19 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- UIKIT -->
-      <!-- UIkit CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
-      <!-- UIkit JS -->
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
-
     <meta charset="UTF-8">
-    <script src="/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>tomiolah1998's homepage</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <!-- Hack -->
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+    <!-- Iosevka -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@typopro/web-iosevka@3.7.5/TypoPRO-Iosevka.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Minified Cirrus CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.5.5/dist/cirrus.min.css">
+    <!-- ChartJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+
+    <script src="/index.js"></script>
   </head>
 
   <body>
-    <h1>HELLO GITHUB PAGES!</h1>
+    <div class="row">
+      <div class="col-3">
+        <div class="card">
+          <img class="img-stretch" src="/img/profile.jpg">
+          <h3 class="u-center card-title">Oláh Tamás-Lajos</h3>
+          <h5 class="u-center iosevka slender">Survivor of the class of 2020</h5>
+          <div class="content">
+            <h6 class="iosevka">
+              <b>Email: </b><a href="mailto:tomiolah1998@gmail.com">tomiolah1998@gmail.com</a><br/>
+              <b>Mobile: </b><a href="tel:+40735508382">+40735508382</a><br/>
+            </h6>
+          </div>
+          <div class="u-center">
+            <h1><a href="https://www.facebook.com/tomi.olah.31"><i class="fab fa-facebook text-info" aria-hidden="true"></i></a></h1>&nbsp;
+            <h1><a href="https://www.linkedin.com/in/tomiolah1998/"><i class="fab fa-linkedin text-info" aria-hidden="true"></i></a></h1>&nbsp;
+            <h1><a href="https://github.com/tomiolah1998"><i class="fab fa-github text-dark" aria-hidden="true"></i></a></h1>&nbsp;
+            <h1><a href="https://gitlab.com/tomiolah1998"><i class="fab fa-gitlab gl" aria-hidden="true"></i></a></h1>&nbsp;
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="content">
+          <section>
+            <h4 class="text-info iosevka"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h4>
+            <ul class="no-bullets">
+              <li>
+                <div class="card">
+                  <div class="content">
+                     <h5 class="iosevka">Mathematics and Computer Science, Intensive English<br/>(2013-2017)</h5>
+                     <h6 class="iosevka"><a href="http://janoszsigmond.ro"> János Zsigmond Unitarian High School, Cluj-Napoca</a></h6>
+                     <p>During my high school years I was given a strong foundation in computer science and informatics, through algorithms in pseudo-code and C++. During these years I also acquired my <b>European Computer Driving Licence (ECDL)</b>, and my <b>C1 Advanced Cambridge English Certificate</b>.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                 <div class="content">
+                    <h5 class="iosevka">Bachelor's degree in Computer Science<br/>(2017-2020)</h5>
+                    <h6 class="iosevka"><a href="http://www.cs.ubbcluj.ro/en/"> Babeș-Bolyai University, Cluj-Napoca</a></h6>
+                    <p>In college, among mathematics (dynamic systems, geometry, algebra, etc.) I have been learning about data structures, algorithms, operating systems, artificial intelligence, web development, software engineering, and many other standard computer science-related topics.
+                      Here I fell in love with functional programming, Python, Javascript (unironically), Linux and Docker.
+                      My thesis was a full-stack social platform based on PostgreSQL, Python (FastAPI framework), React, and Docker.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="divider"></div>
+          </section>
+          <section>
+            <h4 class="text-info iosevka"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h4>
+            <ul class="no-bullets">
+              <li>
+                <div class="card">
+                  <div class="content">
+                     <h5 class="iosevka">Assistant Programmer (Part-Time)<br/>(11<sup>st</sup> March, 2019 - 31<sup>st</sup> January, 2020)</h5>
+                     <h6 class="iosevka"><a href="https://www.riverbed.com/"> Riverbed Technology Labs, Cluj-Napoca</a></h6>
+                     <p>I was working in the Cloud Operations Team, using tools such as Git, Docker, Python (Flask framework), Hashicorp Terraform, Hashicorp Vault, Amazon Web Services, and the Atlassian Stack - JIRA, Bamboo, BitBucket, Confluence. I learned a lot during my employment here, and this experience marked the point, where I started to see how everything, that I've previously learnt works together in complex applications. I also learned a lot about cooperation in a professional team, as well as project management.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="divider"></div>
+          </section>
+          <section>
+            <h4 class="text-info iosevka"><i class="fa fa-tools" aria-hidden="true"></i> Skills</h4>
+            <ul class="no-bullets">
+              <li>
+                <div class="card">
+                  <div class="content">
+                     <h5 class="iosevka"><i class="fa fa-language" aria-hidden="true"></i> <i>Normal</i> Languages</h5>
+                     <ul class="no-bullets">
+                       <li><b>Hungarian</b> (<i>native language</i>)</li>
+                       <li>English</li>
+                       <li>Romanian</li>
+                     </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="content">
+                     <h5 class="iosevka"><i class="fa fa-laptop-code" aria-hidden="true"></i> Programming Languages</h5>
+                     <ul class="no-bullets">
+                       <li><b>Python</b><li>
+                       <li><b>JavaScript</b></li>
+                       <li>Shell Script</li>
+                       <li>C, C++, Java, Swift</li>
+                       <li>Prolog, Haskell</li>
+                     </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="content">
+                     <h5 class="iosevka"><i class="fa fa-wrench" aria-hidden="true"></i> Tools & Technologies</h5>
+                     <ul class="no-bullets">
+                        <li><b>Docker</b><li>
+                        <li><b>Git</b></li>
+                        <li><b>Linux</b></li>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>NGINX / Caddy</li>
+                        <li>CI / CD</li>
+                     </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="divider"></div>
+          </section>
+          <section>
+            <h4 class="text-info iosevka"><i class="fa fa-couch" aria-hidden="true"></i> Hobbies & Interests</h4>
+            <ul class="no-bullets">
+              <li>
+                <div class="card">
+                  <div class="content">
+                      <ul class="no-bullets">
+                        <li>🎵 Listening to music</li>
+                        <li>🎹 Playing the piano</li>
+                        <li>💻 Improving / upgrading my computer</li>
+                        <li>🔨 Tweaking my development setup</li>
+                        <li>🤝 Helping others in computer-related problems</li>
+                        <li>💡 Exploring and trying out new technologies / languages / libraries / frameworks</li>
+                        <li>📸 Casual / phone photography (<a style="display: inline;" href="https://www.instagram.com/tomiolah1998/">@tomiolah1998</a>)</li>
+                      </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

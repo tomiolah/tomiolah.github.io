@@ -1,0 +1,30 @@
+.card-title {
+  font-family: Iosevka;
+  font-style: normal;
+  font-size: 27pt;
+}
+
+.iosevka {
+  font-family: Iosevka;
+}
+
+.slender {
+  font-weight: normal;
+}
+
+.no-flex {
+  display: unset;
+}
+
+.content {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.gl {
+  color: #fc6d27;
+}
