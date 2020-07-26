@@ -4,6 +4,11 @@
   font-size: 27pt;
 }
 
+@font-face {
+  font-family: Iosevka;
+  src: url(/fonts/iosevka-regular.ttf) format("truetype");
+}
+
 .iosevka {
   font-family: Iosevka;
 }
