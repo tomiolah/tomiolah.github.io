@@ -1,3 +1,7 @@
+body {
+  margin-top: 10px;
+}
+
 .card-title {
   font-family: Iosevka;
   font-style: normal;
@@ -32,4 +36,50 @@ p {
 
 .gl {
   color: #fc6d27;
+}
+
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container>* {
+  padding-right: 50px;
+}
+
+li.row {
+  margin-top: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .content {
+    width: 30em;
+  }
+  
+  #skills div.card {
+    min-width: 400px;
+  }
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+#skills>* {
+  margin-top: 0;
+}
+
+.hi {
+  padding-top: 10px;
+}
+
+div.lang {
+  padding: 2px !important;
+}
+
+.divider {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }

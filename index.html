@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-3">
         <div class="card">
-          <img class="img-stretch" src="/img/profile.jpg">
+          <img id="profile" class="img-stretch" src="/img/profile.jpg">
           <h3 class="u-center card-title">Oláh Tamás-Lajos</h3>
           <h5 class="u-center iosevka slender">Survivor of the class of 2020</h5>
           <div class="content">
@@ -39,10 +39,11 @@
           </div>
         </div>
       </div>
-      <div class="col-9">
-        <div class="content">
+      <div class="col">
+        <div class="container">
           <section>
             <h4 class="text-info iosevka"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h4>
+            <div class="divider"></div>
             <ul class="no-bullets">
               <li>
                 <div class="card">
@@ -65,10 +66,10 @@
                 </div>
               </li>
             </ul>
-            <div class="divider"></div>
           </section>
           <section>
             <h4 class="text-info iosevka"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h4>
+            <div class="divider"></div>
             <ul class="no-bullets">
               <li>
                 <div class="card">
@@ -80,38 +81,12 @@
                 </div>
               </li>
             </ul>
-            <div class="divider"></div>
           </section>
           <section>
             <h4 class="text-info iosevka"><i class="fa fa-tools" aria-hidden="true"></i> Skills</h4>
-            <ul class="no-bullets">
-              <li>
-                <div class="card">
-                  <div class="content">
-                     <h5 class="iosevka"><i class="fa fa-language" aria-hidden="true"></i> <i>Normal</i> Languages</h5>
-                     <ul class="no-bullets">
-                       <li><b>Hungarian</b> (<i>native language</i>)</li>
-                       <li>English</li>
-                       <li>Romanian</li>
-                     </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="card">
-                  <div class="content">
-                     <h5 class="iosevka"><i class="fa fa-laptop-code" aria-hidden="true"></i> Programming Languages</h5>
-                     <ul class="no-bullets">
-                       <li><b>Python</b><li>
-                       <li><b>JavaScript</b> (frontend & NodeJS)</li>
-                       <li>Shell Script</li>
-                       <li>C, C++, Java, Swift</li>
-                       <li>Prolog, Haskell</li>
-                     </ul>
-                  </div>
-                </div>
-              </li>
-              <li>
+            <div class="divider"></div>
+            <ul id="skills" class="no-bullets container row">
+              <li class="col">
                 <div class="card">
                   <div class="content">
                      <h5 class="iosevka"><i class="fa fa-wrench" aria-hidden="true"></i> Tools & Technologies</h5>
@@ -121,7 +96,8 @@
                         <li><b>Linux</b></li>
                         <li>Amazon Web Services</li>
                         <li>Terraform, Ansible, Serverless Framework</li>
-                        <li>React</li>
+                        <li>React, Angular</li>
+                        <li>HTML5, CSS3</li>
                         <li>Bootstrap, Cirrus, Bulma</li>
                         <li>NGINX, Caddy</li>
                         <li>CI / CD</li>
@@ -129,22 +105,49 @@
                   </div>
                 </div>
               </li>
+              <div class="col lang">
+                <li class="row">
+                  <div class="card">
+                    <div class="content">
+                       <h5 class="iosevka"><i class="fa fa-laptop-code" aria-hidden="true"></i> Programming Languages</h5>
+                       <ul class="no-bullets">
+                         <li><b>Python</b><li>
+                         <li><b>JavaScript</b> (frontend & NodeJS), ES6</li>
+                         <li>Shell Script, C, C++, Java, Swift</li>
+                         <li>Prolog, Haskell</li>
+                       </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="row">
+                  <div class="card">
+                    <div class="content">
+                       <h5 class="iosevka"><i class="fa fa-language" aria-hidden="true"></i> <i>Normal</i> Languages</h5>
+                       <ul class="no-bullets">
+                         <li><b>Hungarian</b> (<i>native language</i>)</li>
+                         <li>English</li>
+                         <li>Romanian</li>
+                       </ul>
+                    </div>
+                  </div>
+                </li>
+              </div>
             </ul>
-            <div class="divider"></div>
           </section>
           <section>
             <h4 class="text-info iosevka"><i class="fa fa-couch" aria-hidden="true"></i> Hobbies & Interests</h4>
+            <div class="divider"></div>
             <ul class="no-bullets">
               <li>
                 <div class="card">
                   <div class="content">
-                      <ul class="no-bullets">
+                      <ul class="no-bullets hi">
                         <li>🎵 Listening to music</li>
                         <li>🎹 Playing the piano</li>
                         <li>💻 Improving / upgrading my computer</li>
                         <li>🔨 Tweaking my development setup</li>
                         <li>🤝 Helping others in computer-related problems</li>
-                        <li>💡 Exploring and trying out new technologies / languages / libraries / frameworks</li>
+                        <li>💡 Exploring and trying out new tools and technologies</li>
                         <li>📸 Casual / phone photography (<a style="display: inline;" href="https://www.instagram.com/tomiolah1998/">@tomiolah1998</a>)</li>
                       </ul>
                   </div>
