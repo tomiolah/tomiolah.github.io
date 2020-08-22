@@ -1,0 +1,20 @@
+body {
+  padding: 10px;
+}
+
+p {
+  line-height: normal;
+}
+
+.card {
+  padding: 15px;
+}
+
+#hdd_ssd {
+  display: inline-flex;
+  flex-flow: row;
+}
+
+#hdd_ssd .card {
+  margin: 10px;
+}
