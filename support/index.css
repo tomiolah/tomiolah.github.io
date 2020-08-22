@@ -11,8 +11,9 @@ p {
 }
 
 #hdd_ssd {
-  display: inline-flex;
-  flex-flow: row;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #hdd_ssd .card {
