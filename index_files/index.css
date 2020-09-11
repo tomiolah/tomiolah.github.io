@@ -83,3 +83,15 @@ div.lang {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+
+.btn {
+  color: #ffffff;
+}
+
+.btn:hover {
+  color: #000000;
+}
+
+.contact-icon:hover {
+  text-shadow: 0 0 10px #2972fa;
+}
