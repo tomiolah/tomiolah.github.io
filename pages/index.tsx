@@ -5,12 +5,12 @@ import Main from './components/main/Main';
 import Sidebar from './components/sidebar/Sidebar';
 
 const Home: FC = () => (
-  <div>
+  <div className="w-screen h-screen bg-coolGray-100">
     <main>
-      <Box width="100%">
+      <Box className="p-4" width="100%">
         <Grid container direction="row" justify="center" alignItems="flex-start">
-          <Grid item sm={3} xs={12}><Sidebar /></Grid>
-          <Grid item sm={9} xs={12}><Main /></Grid>
+          <Grid className="p-2" item lg={3} xs={12}><Sidebar /></Grid>
+          <Grid className="p-2" item lg={9} xs={12}><Main /></Grid>
         </Grid>
       </Box>
     </main>

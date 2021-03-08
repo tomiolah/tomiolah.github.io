@@ -6,17 +6,21 @@ type AsyncDataReturnValue<T> = {
   isFetching: boolean;
 };
 
-const useAsyncData = <T>(promise: Promise<T>): AsyncDataReturnValue<T> => {
-  const [isFetching, setIsFetching] = useState<boolean>(false);
+const useAsyncData = <T>(promise?: Promise<T>): AsyncDataReturnValue<T> => {
+  const [isFetching, setIsFetching] = useState<boolean>(true);
   const [data, setData] = useState<T | undefined>();
   const [error, setError] = useState<any>();
 
   useEffect(() => {
-    promise
-      .then((res) => setData(res))
-      .catch((reason) => setError(reason))
-      .finally(() => setIsFetching(false));
-  }, []);
+    if (promise) {
+      promise
+        .then((res) => setData(res))
+        .catch((reason) => setError(reason))
+        .finally(() => setIsFetching(false));
+    } else {
+      setIsFetching(false);
+    }
+  }, [promise]);
 
   return {
     data,
