@@ -7,7 +7,7 @@ import useAsyncData from '../../../hooks/useAsyncData';
 import fetchData from '../../../util/fetchData';
 
 const ProfileCard: FC = () => (
-  <Card className="shadow-xl">
+  <Card elevation={5} className="shadow-xl">
     <ProfilePicture />
     <Box p={1}>
       <CardContent>

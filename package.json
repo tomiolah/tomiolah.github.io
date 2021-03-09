@@ -2,6 +2,7 @@
   "name": "tomiolah.github.io",
   "version": "0.1.0",
   "private": false,
+  "license": "WTFPL",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

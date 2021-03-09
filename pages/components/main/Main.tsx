@@ -1,10 +1,11 @@
 import { FC } from "react";
-import { Box, Typography } from '@material-ui/core';
+import { Box } from '@material-ui/core';
+import Education from './sections/Education';
 
 const Main: FC = () => {
   return (
     <Box p={3}>
-      <Typography variant="h3">MAIN</Typography>
+      <Education />
     </Box>
   );
 };
